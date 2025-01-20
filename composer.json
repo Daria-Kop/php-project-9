@@ -1,0 +1,20 @@
+{
+    "name": "hexlet/code",
+    "description": "Анализатор страниц",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Daria-Kop"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.11"
+    }
+}
