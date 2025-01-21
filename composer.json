@@ -3,6 +3,20 @@
     "description": "Анализатор страниц",
     "type": "project",
     "license": "MIT",
+    "require": {
+        "slim/slim": "^4.14",
+        "slim/psr7": "^1.7",
+        "slim/http": "^1.4",
+        "slim/php-view": "^3.4",
+        "php-di/php-di": "^7.0",
+        "nesbot/carbon": "^3.8",
+        "vlucas/valitron": "^1.4",
+        "slim/flash": "^0.4.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "imangazaliev/didom": "^2.0",
+        "illuminate/support": "^11.33",
+        "vlucas/phpdotenv": "^5.6"
+    },
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
@@ -15,6 +29,7 @@
     ],
     "minimum-stability": "stable",
     "require-dev": {
-        "squizlabs/php_codesniffer": "^3.11"
+        "squizlabs/php_codesniffer": "^3.11",
+	"symfony/var-dumper": "^7.1"
     }
 }
