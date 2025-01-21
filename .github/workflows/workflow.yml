@@ -1,4 +1,4 @@
-name: asd1xx-check
+name: test-workflow
 
 on: push
 
