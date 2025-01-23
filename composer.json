@@ -1,8 +1,12 @@
 {
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
     "name": "hexlet/code",
-    "description": "Анализатор страниц",
-    "type": "project",
-    "license": "MIT",
+    "description": "Page analyzer",
+    "license": "proprietary",
     "require": {
         "slim/slim": "^4.14",
         "slim/psr7": "^1.7",
@@ -17,19 +21,8 @@
         "illuminate/support": "^11.33",
         "vlucas/phpdotenv": "^5.6"
     },
-    "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Daria-Kop"
-        }
-    ],
-    "minimum-stability": "stable",
     "require-dev": {
-        "squizlabs/php_codesniffer": "^3.11",
-	"symfony/var-dumper": "^7.1"
+        "squizlabs/php_codesniffer": "*",
+        "symfony/var-dumper": "^7.1"
     }
 }

@@ -24,7 +24,7 @@ Perform the following steps in sequence:
 1. Clone the repository:
     
     ```bash
-    git@github.com:asd1xx/php-project-9.git page-analyzer
+    git@github.com:Daria-Kop/php-project-9.git page-analyzer
     ```
     
 2. Go to the project directory:
