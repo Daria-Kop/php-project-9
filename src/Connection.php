@@ -4,17 +4,8 @@ namespace App;
 
 final class Connection
 {
-    /**
-     * Connection
-     * тип @var
-     */
     private static ?Connection $conn = null;
 
-    /**
-     * Подключение к базе данных и возврат экземпляра объекта \PDO
-     * @return \PDO
-     * @throws \Exception
-     */
     public function connect()
     {
         if (!isset($_ENV['DATABASE_URL'])) {
@@ -45,10 +36,6 @@ final class Connection
         return $pdo;
     }
 
-    /**
-     * возврат экземпляра объекта Connection
-     * тип @return
-     */
     public static function get()
     {
         if (null === static::$conn) {
