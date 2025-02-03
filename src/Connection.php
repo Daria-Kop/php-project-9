@@ -38,7 +38,7 @@ final class Connection
 
     public static function get()
     {
-        if (null === static::$conn) {
+        if (static::$conn === null) {
             static::$conn = new self();
         }
 
