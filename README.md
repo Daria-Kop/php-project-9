@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Daria-Kop/php-project-9/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Daria-Kop/php-project-9/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a6fc89842517ba6b0afc/maintainability)](https://codeclimate.com/github/Daria-Kop/php-project-9/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a6fc89842517ba6b0afc/test_coverage)](https://codeclimate.com/github/Daria-Kop/php-project-9/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3bdf11acf781728e42c7/maintainability)](https://codeclimate.com/github/Daria-Kop/php-project-9/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/3bdf11acf781728e42c7/test_coverage)](https://codeclimate.com/github/Daria-Kop/php-project-9/test_coverage)
 
 # Page Analyzer
 
