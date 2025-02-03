@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 use DI\Container;
 
@@ -12,7 +11,7 @@ class HomeController
     {
     }
 
-    public function home(Request $request, Response $response)
+    public function home(Response $response)
     {
         return $this->container->get('view')->render($response, 'home.phtml');
     }
