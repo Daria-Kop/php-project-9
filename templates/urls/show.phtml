@@ -1,0 +1,62 @@
+<div class="container-lg">
+    <h1 class="mt-3">Сайт: <?= htmlspecialchars($url->name)?></h1>
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered table-responsive text-nowrap table-hover" data-test="url">
+                <tbody class="fw-normal">
+                        <tr>
+                            <td>ID</td>
+                            <td><?= htmlspecialchars($url->id)?></td>
+                        <tr>
+                            <td>Имя</td>
+                            <td><?= htmlspecialchars($url->name)?></td>
+                        </tr>
+                        <tr>
+                            <td>Дата создания</td>
+                            <td><?= htmlspecialchars($url->created_at)?></td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <h2 class="mt-5">Проверки</h2>
+    <form action="<?= $urlsCheck(htmlspecialchars($url->id))?>" class="my-3" method="post">
+        <input type="submit" class="btn btn-primary" value="Запустить проверку">
+    </form>
+    <table class="table table-bordered table-responsive" data-test="checks">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Код ответа</th>
+                <th>h1</th>
+                <th>title</th>
+                <th>description</th>
+                <th>Дата создания</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($checks as $check) : ?>
+                <tr>
+                    <td>
+                        <?= htmlspecialchars($check->id) ?>
+                    </td>
+                    <td>
+                        <?= htmlspecialchars($check->status_code ?? '') ?>
+                    </td>
+                    <td>
+                        <?= htmlspecialchars($check->h1 ?? '') ?>
+                    </td>
+                    <td>
+                        <?= htmlspecialchars($check->title ?? '') ?>
+                    </td>
+                    <td>
+                        <?= htmlspecialchars($check->description ?? '') ?>
+                    </td>
+                    <td>
+                        <?= htmlspecialchars($check->created_at) ?>
+                    </td>
+                </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
+</div>

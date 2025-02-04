@@ -1,0 +1,31 @@
+<div class="container-lg">
+    <h1 class="mt-3">Сайты</h1>
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered table-hover text-nowrap" data-test="urls">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Имя</th>
+                    <th>Последняя проверка</th>
+                    <th>Код ответа</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($urls['allUrls'] as $url) : ?>
+                        <tr>
+                            <td><?= htmlspecialchars($url->id)?></td>
+                            <td>
+                                <a href="<?= $urlsShow(htmlspecialchars($url->id))?>">
+                                    <?= htmlspecialchars($url->name)?>
+                                </a>
+                            </td>
+                            <td><?= htmlspecialchars($urls['lastUrlChecks'][$url->id]->last_check ?? '')?></th>
+                            <td><?= htmlspecialchars($urls['lastUrlChecks'][$url->id]->status_code  ?? '')?></th>
+                        </tr>
+                    <?php endforeach ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
