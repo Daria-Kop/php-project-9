@@ -1,4 +1,4 @@
-<?= $this->layout('layouts/layout'); ?>
+<?= $this->fetch('_form_header.phtml') ?>
 
 <?php if (count($flash) > 0): ?>
   <?php foreach ($flash as $messages): ?>
@@ -60,3 +60,5 @@
     </table>
   </div>
 </main>
+
+<?= $this->fetch('_form_footer.phtml') ?>

@@ -1,4 +1,4 @@
-<?= $this->layout('layouts/layout'); ?>
+<?= $this->fetch('_form_header.phtml') ?>
 
 <main class="flex-grow-1">
   <div class="container-lg mt-3">
@@ -27,3 +27,5 @@
     </div>
   </div>
 </main>
+    
+<?= $this->fetch('_form_footer.phtml') ?>
